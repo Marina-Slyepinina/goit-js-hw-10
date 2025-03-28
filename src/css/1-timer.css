@@ -74,3 +74,26 @@ button:disabled{
     line-height: 1.5;
     text-transform: uppercase;
 }
+
+span.flatpickr-day.today {
+    border: 1px solid #4e75ff;
+}
+
+span.flatpickr-day.selected {
+    background-color:#4e75ff;
+}
+
+span.flatpickr-day:hover {
+    background-color: #c1c1c1;
+}
+
+.iziToast-close {
+    background-image: url('../img/close.svg') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    width: 16px !important;
+    height: 16px !important;
+    right: 20px !important;
+    top: -50% !important;
+    transform: translateY(50%);
+}

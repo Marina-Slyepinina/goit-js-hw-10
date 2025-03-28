@@ -27,15 +27,17 @@ const options = {
                 position: "topRight",
                 message: "Please choose a date in the future",
                 messageColor: "#FFFFFF",
-                messageSize: "400px",
+                messageSize: "16px",
                 color: "#ef4040",
                 progressBarColor: "#ffbebe",                
-                maxWidth: "302px",
+                iconUrl: "../img/error.svg"
                     });
         }
         buttonStart.disabled = false;
     }
 };
+
+flatpickr.l10ns.default.firstDayOfWeek = 1;
 
 flatpickr(input, options);
 
