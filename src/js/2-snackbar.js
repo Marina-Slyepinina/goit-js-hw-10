@@ -42,6 +42,7 @@ function handleSubmit(event) {
 
 function showFulfilledRes(value) {
     iziToast.show({
+        position: "topRight",
         class: "iziToastFulfilled",
         title: "OK",
         message: `Fulfilled promise in ${value}ms`,
@@ -51,10 +52,10 @@ function showFulfilledRes(value) {
 
 function showRejected(value) {
     iziToast.show({
+        position: "topRight",
         class: "iziToastRejected",
         title: "Error",
         message: `Rejected promise in ${delay}ms`,
         iconUrl: "../img/error.svg"
-
     })
 }
