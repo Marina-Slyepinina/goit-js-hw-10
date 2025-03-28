@@ -15,7 +15,7 @@ radioFulf.addEventListener("change", hendleRadioValue);
 radioRej.addEventListener("change", hendleRadioValue);
 
 function handleInputValue(ev) {
-    return delay = ev.target.value;
+    return delay = Number(ev.target.value);
 }
 
 function hendleRadioValue(event) {
@@ -55,7 +55,7 @@ function showRejected(value) {
         position: "topRight",
         class: "iziToastRejected",
         title: "Error",
-        message: `Rejected promise in ${delay}ms`,
+        message: `Rejected promise in ${value}ms`,
         iconUrl: "../img/error.svg"
     })
 }
